@@ -1,12 +1,12 @@
 public class Order {
     private int orderID;
     private Customer customer;
-    private product [] products;
+    private Product [] products;
     private int [] quantitys;
     private String orderDate;
     private String status;
 
-    public Order(int orderID, Customer customer, product [] products, String orderDate, String status) {
+    public Order(int orderID, Customer customer, Product [] products, String orderDate, String status) {
         this.orderID = orderID;
         this.customer = customer;
         this.products = products;
@@ -26,10 +26,10 @@ public class Order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-    public product[] getProducts() {
+    public Product[] getProducts() {
         return products;
     }
-    public void setProducts(product[] products) {
+    public void setProducts(Product[] products) {
         this.products = products;
     }
     public int[] getQuantitys() {

@@ -5,7 +5,7 @@ public class Customer {
     private String email;
     private Boolean isLoyalCustomer;
 
-    public Customer(int id, String firstName, String lastName, String email, Boolean isLoyalCustomer) {
+    public Customer(int id, String firstName, String lastName, String email, Boolean isLoyalCustomer)  {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
