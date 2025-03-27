@@ -3,13 +3,14 @@ public class Product {
     private String category;
     private int id;
     private double price;
-    private int quantity;
+    private int quantityInStock;
 
-    public Product(String name, String category, double price, int quantity, int id) {
-        this.productName = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.id = id;
+    public Product(String newName, String newCategory, double newPrice, int newQuantityInStock, int newId) {
+        productName = newName;
+        category = newCategory;
+        price = newPrice;
+        quantityInStock = newQuantityInStock;
+        id = newId;
     }
     public String getProductName() {
         return productName;
@@ -35,15 +36,16 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-    public int getQuantity() {
-        return quantity;
+    public int getQuantityInStock() {
+        return quantityInStock;
     }
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQuantityInStock(int newQuantity) {
+        this.quantityInStock = newQuantity;
     }
 
     public String displayInfo() {
-        System.out.println("Product Name: " + productName + " ID: " + id + " Price: " + price + " Quantity: " + quantity);
-        return "Product Name: " + productName + " ID: " + id + " Price: " + price + " Quantity: " + quantity;
+        System.out.println("Product Name: " + productName + " ID: " + id + " Price: " + price + " Quantity: " + quantityInStock);
+        return "Product Name: " + productName + " ID: " + id + " Price: " + price + " Quantity: " + quantityInStock;
     }
+
 }
