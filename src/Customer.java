@@ -1,22 +1,22 @@
 public class Customer {
-    private int id;
+    private String customerId;
     private String firstName;
     private String lastName;
     private String email;
     private Boolean isLoyalCustomer;
 
-    public Customer(int id, String firstName, String lastName, String email, Boolean isLoyalCustomer)  {
-        this.id = id;
+    public Customer(String customerId,String firstName, String lastName, String email, Boolean isLoyalCustomer)  {
+        this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.isLoyalCustomer = isLoyalCustomer;
     }
-    public int getId() {
-        return id;
+    public String getId() {
+        return customerId;
     }
-    public void setId(int id) {
-        this.id = id;
+    public void setId(String id) {
+        this.customerId = customerId;
     }
     public String getFirstName() {
         return firstName;
@@ -42,5 +42,11 @@ public class Customer {
     public void setIsLoyalCustomer(Boolean isLoyalCustomer) {
         this.isLoyalCustomer = isLoyalCustomer;
     }
+    // method for customer identifiction
+    public String customerInfo() {
+        System.out.println("Customer ID: " + customerId + " First Name: " + firstName + " Last Name: " + lastName + " Email: " + email + " isLoyalCustomer: " + isLoyalCustomer);
+        return "Customer ID: " + customerId + " First Name: " + firstName + " Last Name: " + lastName + " Email: " + email + " isLoyalCustomer: " + isLoyalCustomer;
 
+
+    };
 }
