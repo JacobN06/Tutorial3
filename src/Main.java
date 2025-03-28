@@ -47,6 +47,7 @@ public class Main {
         products.add(product4);
         quantitys.add(2);
         store.createOrder(customer1,products,quantitys);
+        System.out.println();
 
         // changing an order status
         store.changeOrderStatus(store.getOrders().get(0).getOrderID());
